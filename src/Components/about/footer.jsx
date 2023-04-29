@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
             <ul className="list-unstyled">
               <li>
-                <i className="fa fa-envelope-o me-3"></i>example@example.com
+                <i className="fa fa-envelope-o me-3"></i>director.iiec@vitap.ac.in
               </li>
               <li>
                 <i className="fa fa-phone me-3"></i>123-456-7890
