@@ -3,6 +3,20 @@
   max-width: 1200px;
   position: relative;
   }
+  #left {
+    background-color: #6a6a6a;
+    border-radius: 60%;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  #left:hover {
+    background-color: #151414;
+  }
+
+  
+  
   
   .wrapper i {
   top: 50%;

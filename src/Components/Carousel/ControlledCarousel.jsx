@@ -22,8 +22,8 @@ function ControlledCarousel() {
         <img className="d-block w-100 " src={img} alt="First slide" />
         {/* Caption for first slide */}
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>VIT-AP TECHNOLOGY BUSSINESS INCUBATION FOUNDATION</h3>
+          <p>The Art of turning an idea into a thriving reality.</p>
         </Carousel.Caption>
       </Carousel.Item>
       {/* Second slide */}
@@ -32,8 +32,8 @@ function ControlledCarousel() {
         <img className="d-block w-100 " src={img1} alt="Second slide" />
         {/* Caption for second slide */}
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Innovation</h3>
+          <p>where passion meets persistence in the pursuit of success.</p>
         </Carousel.Caption>
       </Carousel.Item>
       {/* Third slide */}
@@ -42,8 +42,8 @@ function ControlledCarousel() {
         <img className="d-block w-100 " src={img2} alt="Third slide" />
         {/* Caption for third slide */}
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>dream of Entrepreneurship</h3>
+          <p>Entrepreneurship is not just a career choice, it's a way of life.                </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
