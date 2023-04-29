@@ -60,23 +60,10 @@ function About() {
               <Card.Body ref={cardRef}>
                 <div className="d-flex flex-column justify-content-center align-items-center h-100">
                   <Card.Text className="card-text text-left">
-                  VIT-AP Technology Entrepreneurship Centre (VTEC) is the
-                    incubation centre located within VIT-AP University,
-                    Amaravathi, AP. VTEC is under the process of section-8 Not
-                    for Profit Company registration. At VTEC, we believe that
-                    entrepreneurship is the key to unlocking innovation and
-                    driving progress. VTEC assists potential faculty and
-                    students in their technology-based and knowledge-driven
-                    startups, and currently, many product prototypes are
-                    supported at the centre. VTEC has a dedicated space of
-                    12,500 sq. ft for incubation and product development
-                    activity. The centre can support and host up to 50+
-                    incubates. It comprises dedicated office space, co-working
-                    space, executive office space, board meeting room,
-                    makerspace, and free-time recreation zone. Additionally, the
-                    in the areas of AI and Robotics, Internet of Things (IOT),
-                    registered incubatees can utilize COE facilities established
-                    Cybersecurity, and Rapid Prototyping.
+                  Amaravathi, Andhra Pradesh's VIT-AP University is home to the VIT-AP Technology Business Incubation Foundation (VTBIF), an incubator. It is now going through the registration process to become a section-8 not-for-profit organisation. VTBIF's main goal is to encourage future faculty members and students to be innovative and entrepreneurial.
+                  Many product prototypes are currently being developed and supported at the centre, which provides support for startups that are knowledge- and technology-driven. For incubation and product development operations, the incubation centre offers a dedicated 12,500 square foot facility. At one time, it can accommodate and support more than 50 incubates.
+                  The VTBIF has a makerspace, a free-time entertainment area, executive offices, co-working spaces, boardrooms, and dedicated office space. Furthermore, the incubators can make use of the resources set up in the fields of robotics and AI, the Internet of Things (IOT), cybersecurity, and rapid prototyping.
+
                   </Card.Text>
                 </div>
               </Card.Body>
