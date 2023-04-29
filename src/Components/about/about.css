@@ -1,0 +1,109 @@
+
+  #about h3 {
+    color: #fff;
+    align-items: center;
+  }
+  #about {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  .title {
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  .fade-up-enter {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .fade-up-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1000ms ease-in-out, transform 1000ms ease-in-out;
+  }
+  
+  .fade-up-appear {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .fade-up-appear-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1000ms ease-in-out, transform 1000ms ease-in-out;
+  }
+  
+  .card-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+  }
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  #about .card-text {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-name: fadeInLeft;
+  }
+
+  #about .img-fluid {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-name: fadeInRight;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  #about .card-text {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-name: fadeInLeft;
+  }
+
+  #about .img-fluid {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-name: fadeInRight;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #about .card-text {
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-name: fadeInUp;
+  }
+
+  #about .img-fluid {
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-name: fadeInRight;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  #about .card-text {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-name: fadeInLeft;
+  }
+
+  #about .img-fluid {
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-name: fadeInRight;
+  }
+}
+
