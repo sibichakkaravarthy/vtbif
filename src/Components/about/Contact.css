@@ -5,7 +5,7 @@
 
 .contact .row {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -13,22 +13,21 @@
 .contact .row .image {
   flex: 1;
   text-align: left;
-  padding: 0 2rem; /* Adjusted padding for smaller screens */
+  padding: 0 2rem;
 }
 
 .contact .row .image img {
   height: 700px;
   width: 700px;
-  max-width: 100%; /* Ensure the image does not exceed the container */
-  /* Ensure the image covers the container */
+  max-width: 100%;
 }
 
 .contact .row .form-container {
   flex: 1;
   text-align: left;
-  padding: 0 1rem; /* Adjusted padding for smaller screens */
-  max-width: 600px; /* Limit the maximum width of the form container */
-  margin: 0 auto; /* Center the form container horizontally */
+  padding: 0 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact .row .form-container h2 {
@@ -43,10 +42,10 @@
   background: none;
   border-radius: .5rem;
   box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
-  padding: 0 1rem; /* Adjusted padding for smaller screens */
+  padding: 0 1rem;
   margin: 1rem 0;
-  font-size: 1.4rem; /* Adjusted font size for smaller screens */
-  width: 100%; /* Ensure the input fields take up full width */
+  font-size: 1.4rem;
+  width: 100%;
 }
 
 .contact .row .form-container .inputBox {
@@ -55,7 +54,7 @@
 }
 
 .contact .row .form-container .inputBox input[type="text"] {
-  width: 48%; /* Adjusted width for smaller screens */
+  width: 48%;
 }
 
 .contact .row .form-container input[type="email"] {
@@ -64,8 +63,8 @@
 
 .contact .row .form-container textarea {
   width: 100%;
-  height: 7rem; /* Adjusted height for smaller screens */
-  padding: 0.5rem; /* Adjusted padding for smaller screens */
+  height: 7rem;
+  padding: 0.5rem;
   resize: none;
 }
 
@@ -73,7 +72,7 @@
   background-color: #2085ded8;
   color: #000;
   cursor: pointer;
-  height: 3rem; /* Adjusted height for smaller screens */
+  height: 3rem;
   width: 100%;
 }
 
@@ -83,7 +82,7 @@
 
 @media screen and (max-width: 768px) {
   .contact .row {
-    flex-flow: column;
+    flex-direction: column;
   }
 
   .contact .row .image img {
