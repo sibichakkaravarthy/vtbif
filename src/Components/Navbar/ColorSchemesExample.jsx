@@ -2,10 +2,9 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './Color.css'
 
-
 function ColorSchemesExample() {
   return (
-    <Navbar bg="light" expand="lg" fixed="top">
+    <Navbar bg="light" expand="lg" sticky="top" className="fixed-top">
       <Container>
         <Navbar.Brand href="#">
           <img src="./Images/logo_new.png" height="40" alt="VTech" />

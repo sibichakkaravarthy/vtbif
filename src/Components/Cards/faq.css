@@ -1,0 +1,106 @@
+
+.faq .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+ 
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.faq .row .image {
+  flex: 1;
+  width: 55%;
+}
+
+.faq .row .image img {
+  height: 70vh;
+  max-width: 100%;
+}
+
+.faq .row .accordion-container {
+  flex: 1;
+  text-align: left;
+}
+
+.faq .row .accordion-container .accordion {
+  margin: 1rem 0;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.faq .row .accordion-container .accordion-header {
+  background-color: #2085dee5;
+  display: flex;
+  align-items: center;
+  
+}
+
+.faq .row .accordion-container .accordion-header span {
+  display: inline-block;
+  text-align: center;
+  height: 4rem;
+  width: 5rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background: #fff;
+  color: #333;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.faq .row .accordion-container .accordion-header h3 {
+  display: inline;
+  color: #000;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.faq .row .accordion-container .accordion-body {
+  padding: 1rem;
+  color: #444;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  font-size: 1.3rem;
+  display: none;
+}
+
+.faq .row .accordion-container .accordion.active .accordion-body {
+  display: block;
+}
+.faq .row .accordion-container .accordion .accordion-header.active {
+  background-color: #48d3e5;
+}
+
+.faq .row .accordion-container .accordion .accordion-header.active span {
+  clip-path: polygon(0% 0%, 100% 0%, 75% 50%, 100% 100%, 0% 100%);
+}
+
+.faq .row .accordion-container .accordion .accordion-body.active {
+  display: block;
+}
+@media (max-width: 768px) {
+  .faq .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq .row .image {
+    width: 100%;
+    order: 1;
+  }
+
+  .faq .row .accordion-container {
+    flex: 1;
+    width: 100%;
+    order: 2;
+    margin-top: 2rem;
+  }
+}
+

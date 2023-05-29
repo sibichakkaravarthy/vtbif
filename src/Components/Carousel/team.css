@@ -1,0 +1,125 @@
+.team {
+    /* Remove the fixed height of the container */
+  
+    
+    text-align: center;
+    background-color: #222;
+    padding: 5rem 0; /* Add padding for spacing */
+    overflow: hidden; /* Hide any overflow content */
+  }
+  h4{
+    color:white;
+    font-size: 2.5rem;
+    
+   
+  }
+  .team .card {
+     /* Adjust the height as desired */
+  }
+  
+  .team .card .image img {
+    /* Adjust the image height as desired */
+    width: 8rem; /* Adjust the image width as desired */
+    border: .3rem solid #fff; /* Adjust the border size as desired */
+  }
+  
+  .team .card .info h3 {
+    font-size: 1.6rem; /* Adjust the font size as desired */
+  }
+  
+  .team .card .info span {
+    font-size: 1.4rem; /* Adjust the font size as desired */
+  }
+  
+  .team .card .info .icons a {
+    margin-top: 2rem; /* Adjust the margin top as desired */
+    font-size: 1.8rem; /* Adjust the font size as desired */
+  }
+  
+  .team .card::before,
+  .team .card::after {
+    height: 12rem; /* Adjust the pseudo-element height as desired */
+    width: 12rem; /* Adjust the pseudo-element width as desired */
+  }
+  
+  .team .heading {
+    font-size: 2rem; /* Adjust the font size as desired */
+  }
+  
+  .team .row {
+    margin-top: 2rem; /* Adjust the margin as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .team .row .card {
+    height: 500px; /* Fill the available vertical space */
+    width: calc(50% - 30rem); /* Adjust the width calculation as needed */
+    background: #fff;
+    text-align: center;
+    margin: 2rem;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-reflect: below 0.2rem linear-gradient(transparent 70%, #0004);
+  }
+  
+  
+  
+  .team .row .card .image {
+    margin: 1rem 0;
+    padding-top: 2rem; /* Adjust the padding as needed */
+  }
+  
+  .team .row .card .image img {
+    height: 10rem; /* Adjust the height of the image */
+    width: 10rem; /* Adjust the width of the image */
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+  }
+  
+  .team .row .card .info h4 {
+    font-size: 1.8rem; /* Adjust the font size as needed */
+    color: #333;
+  }
+  
+  .team .row .card .info span {
+    font-size: 1.6rem; /* Adjust the font size as needed */
+     
+    color: #3a4ddefd;
+  }
+  
+ 
+  
+ 
+  
+  .team .row .card::before,
+  .team .row .card::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 10rem; /* Adjust the height as needed */
+    width: 10rem; /* Adjust the width as needed */
+    z-index: -1;
+  }
+  
+  .team .row .card::before {
+    background: #3a71decd;
+        top: -1.5rem; /* Adjust the positioning as needed */
+    right: -2rem; /* Adjust the positioning as needed */
+  }
+  
+  .team .row .card::after {
+    background: #ccc;
+    bottom: -1.5rem; /* Adjust the positioning as needed */
+    left: -2rem; /* Adjust the positioning as needed */
+  }
+  @media (max-width: 768px) {
+    .team .row .card {
+      width: calc(100% - 6rem); /* Adjust the width calculation as needed */
+    }
+  }
+  
