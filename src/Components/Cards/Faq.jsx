@@ -13,7 +13,7 @@ const FAQ = () => {
       <h3 className="heading">FAQ</h3>
       <div className="row">
         <div className="image">
-          <img src="Images/faq.png" alt="" />
+          <img src="Images/FAQ.png" alt="" />
         </div>
         <div className="accordion-container">
           <div className="accordion">
