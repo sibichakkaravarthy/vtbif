@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e43ba305.css",
-    "main.js": "/static/js/main.9bf09097.js",
+    "main.css": "/static/css/main.c7bd6c11.css",
+    "main.js": "/static/js/main.c620cc5a.js",
     "static/media/vitap-2.png": "/static/media/vitap-2.6f609fbca15faf296123.png",
     "static/media/v-5.png": "/static/media/v-5.5523826a47ced10a09a1.png",
     "static/media/Picture1.png": "/static/media/Picture1.82e5d7cc831580057a97.png",
@@ -13,17 +13,16 @@
     "static/media/v-7.png": "/static/media/v-7.5f09add65eb1ce4b4815.png",
     "static/media/v-9.png": "/static/media/v-9.6d8ab5400ba78126389c.png",
     "static/media/vitap-2.jpg": "/static/media/vitap-2.419230c8a8fa6f9efb4c.jpg",
-    "static/media/idea.jpg": "/static/media/idea.95a485b76e8e2b5b15cd.jpg",
     "static/media/v-14.png": "/static/media/v-14.c93e1458e6cbe0a75f62.png",
     "static/media/v-10.png": "/static/media/v-10.557ebb1e6627751efcec.png",
     "static/media/vitap-1.jpg": "/static/media/vitap-1.439a33078942a72b05ae.jpg",
     "static/media/v-6.jpg": "/static/media/v-6.789e31ca880eebb6aba9.jpg",
     "index.html": "/index.html",
-    "main.e43ba305.css.map": "/static/css/main.e43ba305.css.map",
-    "main.9bf09097.js.map": "/static/js/main.9bf09097.js.map"
+    "main.c7bd6c11.css.map": "/static/css/main.c7bd6c11.css.map",
+    "main.c620cc5a.js.map": "/static/js/main.c620cc5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e43ba305.css",
-    "static/js/main.9bf09097.js"
+    "static/css/main.c7bd6c11.css",
+    "static/js/main.c620cc5a.js"
   ]
 }

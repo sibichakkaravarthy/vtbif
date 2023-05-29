@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import assets from "../assest/idea.jpg";
+
 import "./about.css";
 import ScrollReveal from "scrollreveal";
 import { CSSTransition } from 'react-transition-group';
@@ -71,7 +71,7 @@ function About() {
           </Col>
           <Col md={4}>
             <CSSTransition nodeRef={imageRef} in={true} appear={true} timeout={1000} classNames="fade-up">
-              <Image src={assets} fluid className="img-fluid" ref={imageRef} />
+              <Image src={"Images/about.jpeg"} fluid className="img-fluid" ref={imageRef} width={300} height={100} />
             </CSSTransition>
           </Col>
         </Row>
