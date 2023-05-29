@@ -114,7 +114,6 @@
   }
   @media (max-width: 768px) {
     .team .row .card {
-      height: 450px;
       width: calc(100% - 15rem); /* Adjust the width calculation as needed */
     }
   }
