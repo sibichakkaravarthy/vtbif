@@ -87,7 +87,8 @@
   }
 
   .contact .row .image img {
-    width: 100%;
+    width: 400px;
+    height: 300px;
   }
 
   .contact .row .form-container {

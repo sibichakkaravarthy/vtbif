@@ -13,9 +13,7 @@
     
    
   }
-  .team .card {
-     /* Adjust the height as desired */
-  }
+
   
   .team .card .image img {
     /* Adjust the image height as desired */
@@ -31,10 +29,7 @@
     font-size: 1.4rem; /* Adjust the font size as desired */
   }
   
-  .team .card .info .icons a {
-    margin-top: 2rem; /* Adjust the margin top as desired */
-    font-size: 1.8rem; /* Adjust the font size as desired */
-  }
+ 
   
   .team .card::before,
   .team .card::after {
@@ -55,8 +50,8 @@
   }
   
   .team .row .card {
-    height: 500px; /* Fill the available vertical space */
-    width: calc(50% - 30rem); /* Adjust the width calculation as needed */
+    height: 500px;
+    width: 300px;
     background: #fff;
     text-align: center;
     margin: 2rem;
