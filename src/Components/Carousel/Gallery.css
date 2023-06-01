@@ -4,7 +4,7 @@
   position: relative;
   }
   #left {
-    background-color: #6a6a6a;
+    background-color: #0c0707;
     border-radius: 60%;
     color: white;
     cursor: pointer;
@@ -12,7 +12,18 @@
   }
   
   #left:hover {
-    background-color: #151414;
+    background-color: #621717ba;
+  }
+  #right {
+    background-color: #0c0707;
+    border-radius: 60%;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  #right:hover {
+    background-color: #621717ba;
   }
 
   

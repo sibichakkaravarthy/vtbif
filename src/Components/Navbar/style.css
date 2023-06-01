@@ -1,0 +1,41 @@
+.btn-sm {
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 1);
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.y {
+  height: 20px;
+  width: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .btn-sm {
+    padding: 8px 16px;
+  }
+
+  .y {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-sm {
+    padding: 6px 12px;
+  }
+
+  .y {
+    height: 12px;
+    width: 12px;
+  }
+}
