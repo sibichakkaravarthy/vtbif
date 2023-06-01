@@ -1,18 +1,26 @@
 .carousel-item {
-  height: 100vh;
+  height: 90vh; /* Update the height to 90% of the viewport height */
   min-height: 300px;
   width: 100%;
   top: -2;
+  
+  
 }
 
+
+
+
 .carousel-caption {
-  bottom: 220px;
-  z-index: 2;
+  top: 10%;
+  bottom: unset;
+  z-index: 1;
+ 
 }
+
 
 .carousel-caption h3 {
   font-size: 40px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 2px;
   margin-top: 25px;
   margin-bottom: 20px;
@@ -33,69 +41,73 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(35, 33, 33, 0.7);
+  background: rgba(32, 32, 32, 0.9);
   z-index: 1;
 }
 
 @media only screen and (max-width: 991px) {
   .carousel-caption {
-      bottom: 350px;
+    bottom: 350px;
   }
-  .carousel-item > #img {
-    
-    min-width: 80%;
-    height: 100%;
-}
   .carousel-caption p {
-      width: 100%;
+    width: 100%;
   }
   .carousel-inner::before {
-      background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9);
   }
-  
-  .carousel-item > img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 60%;
-      height: 100%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .carousel-caption {
-      bottom: 250px;
+  .carousel-item  {
+    height: 50vh;
   }
   .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 60%;
-    height: 100%;
+    height: 50vh;
+  }
 }
+
+@media only screen and (max-width: 767px) {
+  .carousel-caption {
+    bottom: 250px;
+  }
+  .carousel-item  {
+    height: 50vh;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: -2;
+    left: 0;
+    min-width: 60%;
+    height: 50vh;
+  }
   .carousel-caption h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
   .carousel-caption p {
-      font-size: 16px;
+    font-size: 16px;
   }
   .carousel-inner::before {
-      background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 
 @media only screen and (max-width: 575px) {
   .carousel-caption {
-      bottom: 150px;
+    bottom: 150px;
+  }
+  .carousel-item,
+  .carousel-item > img {
+    height: 50vh;
   }
   .carousel-caption h3 {
-      font-size: 25px;
+    font-size: 25px;
   }
   .carousel-caption p {
-      font-size: 14px;
-      line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.6;
   }
   .carousel-inner::before {
-      background: rgba(46, 38, 38, 0.7);
+    background: rgba(0, 0, 0, 0.8);
   }
 }

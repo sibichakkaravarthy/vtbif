@@ -1,17 +1,22 @@
+
 import React from 'react';
-import { createRoot } from 'react-dom';
-import './index.css';
-import App from './App';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Startup from './Components/about/Startup.jsx';
+import App from './App.js';
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
+function Root() {
+  return (
+    <BrowserRouter>
+    
+      <Routes>
+  
+        <Route path="/" element={<App />} />
+        <Route path="/startup" element={<Startup />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
+ReactDOM.render(<Root />, document.getElementById('root'));

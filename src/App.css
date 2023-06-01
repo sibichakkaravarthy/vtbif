@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
+  z-index: 999;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-modal .modal-dialog {
+  margin: 0 auto;
+  width: 200px; /* Adjust the width as desired */
+  height: auto; /* Set to auto for variable height based on content */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-modal .modal-content {
+  height: auto;
+  width: 70%;
+  /* Adjust the background color and opacity as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-modal .modal-body {
+  max-height: 70vh; /* Adjust the maximum height as desired */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the maximum height */
 }
 
-.App-link {
-  color: #61dafb;
+.custom-modal .modal-title {
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span{
+  color: red;
+}
+.modal{
+  background-color: rgba(186, 184, 184, 0);
 }

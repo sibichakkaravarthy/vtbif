@@ -1,5 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Gallery.css";
+import ScrollReveal from "scrollreveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
 import img from "../assest/Picture1.png";
 import img1 from "../assest/vitap-2.png";
 import img2 from "../assest/vitap-3.png";
@@ -13,19 +17,12 @@ import img9 from "../assest/v-11.png";
 import img10 from "../assest/v-12.png";
 import img11 from "../assest/v-13.png";
 import img12 from "../assest/v-14.png";
-import ScrollReveal from "scrollreveal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Gallery() {
   const carouselRef = useRef(null);
   const modalRef = useRef(null);
   const modalContentRef = useRef(null);
-  let isDragStart = false,
-    prevPageX,
-    prevScrollLeft,
-    positionDiff;
-  let firstImgWidth = 0;
+  const [firstImgWidth, setFirstImgWidth] = useState(0);
 
   const openModal = (img) => {
     modalRef.current.style.display = "block";
@@ -36,32 +33,7 @@ function Gallery() {
     modalRef.current.style.display = "none";
   };
 
-  const autoSlide = () => {
-    positionDiff = Math.abs(positionDiff);
-    let valDifference = firstImgWidth - positionDiff;
-    // console.log(valDifference);
-  };
-
-  const dragStart = (e) => {
-    isDragStart = true;
-    prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrollLeft = carouselRef.current.scrollLeft;
-  };
-
-  const dragging = (e) => {
-    if (!isDragStart) return;
-    e.preventDefault();
-    carouselRef.current.classList.add("dragging");
-    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-    carouselRef.current.scrollLeft = prevScrollLeft - positionDiff;
-  };
-
-  const dragStop = () => {
-    isDragStart = false;
-    carouselRef.current.classList.remove("dragging");
-    autoSlide();
-  };
-
+  
   const handleArrowClick = (direction) => {
     const newScrollLeft =
       direction === "left"
@@ -73,6 +45,9 @@ function Gallery() {
 
   useEffect(() => {
     ScrollReveal().reveal(".carousel_2 img");
+    if (carouselRef.current.children[0]) {
+      setFirstImgWidth(carouselRef.current.children[0].clientWidth + 14);
+    }
   }, []);
 
   return (
@@ -86,101 +61,119 @@ function Gallery() {
             onClick={() => handleArrowClick("left")}
           />
           <div className="carousel_2" ref={carouselRef}>
-            <img
-              id="myImg1"
-              src={img}
-              alt="img1"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg1"))}
-              onLoad={() =>
-                (firstImgWidth =
-                  carouselRef.current.children[0].clientWidth + 14)
-              }
-            />
+          <img
+  id="myImg1"
+  src={img}
+  alt="img1"
+  draggable="false"
+  onClick={() => openModal(document.getElementById("myImg1"))}
+  onLoad={() => {
+    if (carouselRef.current.children[0]) {
+      setFirstImgWidth(carouselRef.current.children[0].clientWidth + 14);
+    }
+  }}
+/>
+
+<img
+  id="myImg2"
+  src={img1}
+  alt="img2"
+  draggable="false"
+  onClick={() => openModal(document.getElementById("myImg2"))}
+/>
+<img
+  id="myImg3"
+  src={img2}
+  alt="img3"
+  draggable="false"
+  onClick={() => openModal(document.getElementById("myImg3"))}
+/>
             <img
               id="myImg2"
-              src={img1}
+              src={img2}
               alt="img2"
               draggable="false"
               onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg3"
-              src={img2}
-              alt="img3"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg3"))}
-            />
-            <img
-              id="myImg4"
+              id="myImg2"
               src={img3}
-              alt="img4"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg4"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg5"
+              id="myImg2"
               src={img4}
-              alt="img5"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg5"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg6"
+              id="myImg2"
               src={img5}
-              alt="img6"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg6"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg7"
+              id="myImg2"
               src={img6}
-              alt="img7"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg7"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg8"
+              id="myImg2"
               src={img7}
-              alt="img8"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg8"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg9"
+              id="myImg2"
               src={img8}
-              alt="img9"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg9"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg10"
+              id="myImg2"
+              src={img8}
+              alt="img2"
+              draggable="false"
+              onClick={() => openModal(document.getElementById("myImg2"))}
+            />
+            <img
+              id="myImg2"
               src={img9}
-              alt="img10"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg10"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg11"
+              id="myImg2"
               src={img10}
-              alt="img11"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg11"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg12"
+              id="myImg2"
               src={img11}
-              alt="img12"
+              alt="img2"
               draggable="false"
-              onClick={() => openModal(document.getElementById("myImg12"))}
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
             <img
-              id="myImg13"
+              id="myImg2"
               src={img12}
-              alt="img13"
-              draggable="true"
-              onClick={() => openModal(document.getElementById("myImg13"))}
+              alt="img2"
+              draggable="false"
+              onClick={() => openModal(document.getElementById("myImg2"))}
             />
+            {/* Add more images here */}
+
           </div>
           <FontAwesomeIcon
             id="right"
@@ -191,6 +184,7 @@ function Gallery() {
               borderRadius: "50%",
               padding: "10px",
               color: "#fff",
+              
             }}
           />
         </div>

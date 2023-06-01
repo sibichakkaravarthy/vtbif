@@ -5,7 +5,7 @@ import img from '../assest/vitap-1.jpg';
 import img1 from '../assest/vitap-2.jpg';
 import img2 from '../assest/vitap-1.jpg';
 
-function ControlledCarousel() {
+export default function ControlledCarousel() {
   const [index, setIndex] = useState();
 
   // function to update the current slide index
@@ -42,12 +42,10 @@ function ControlledCarousel() {
         <img className="d-block w-100 " src={img2} alt="Third slide" />
         {/* Caption for third slide */}
         <Carousel.Caption>
-          <h3>dream of Entrepreneurship</h3>
-          <p>Entrepreneurship is not just a career choice, it's a way of life.                </p>
+          <h3>Dream of Entrepreneurship</h3>
+          <p>Entrepreneurship is not just a career choice, it's a way of life.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
-
-export default ControlledCarousel;

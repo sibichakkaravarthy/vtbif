@@ -17,8 +17,8 @@
 }
 
 .contact .row .image img {
-  height: 700px;
-  width: 700px;
+  height: 500px;
+  width: 500px;
   max-width: 100%;
 }
 
@@ -38,14 +38,16 @@
 .contact .row .form-container textarea {
   outline: none;
   border: none;
-  height: 4rem;
+  height: 3rem;
   background: none;
   border-radius: .5rem;
   box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
   padding: 0 1rem;
   margin: 1rem 0;
-  font-size: 1.4rem;
+  font-size: 1rem;
   width: 100%;
+ 
+  
 }
 
 .contact .row .form-container .inputBox {
@@ -85,14 +87,26 @@
     flex-direction: column;
   }
 
-  .contact .row .image img {
-    width: 400px;
-    height: 300px;
+  .contact .row .image {
+    flex: 1;
+    text-align: center;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .contact .row .image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  
 
   .contact .row .form-container {
-    padding: 0 1rem;
-    margin: 0;
+    padding: 0 3rem;
+    margin: 5px ;
   }
 
   .contact .row .form-container textarea {
