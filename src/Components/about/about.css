@@ -7,13 +7,15 @@
     background-color: #fff;
     padding: 50px 0;
   }
-  .title {
+  .heading {
     font-size: 40px;
-    color: #333;
+    font-weight: 600;
+    color: #000;
     text-align: center;
     margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: "poppins", sans-serif;
     letter-spacing: 3px;
   }
   .card-body {

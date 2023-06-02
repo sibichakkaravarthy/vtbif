@@ -1,24 +1,59 @@
-.modal-overlay {
+.custom-modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
 
+  
   backdrop-filter: blur(8px); /* Adjust the blur intensity as needed */
   z-index: 999;
+  background-color: rgba(186, 184, 184, 0);
+}
+
+.custom-modal h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.custom-modal .x {
+  height: 80px;
+  width: 70px;
+}
+
+.custom-modal p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .custom-modal .modal-dialog {
   margin: 0 auto;
   width: 200px; /* Adjust the width as desired */
-  height: auto; /* Set to auto for variable height based on content */
-}
 
+  @media (min-width: 576px) {
+    width: 400px; /* Adjust the width for small screens and up */
+  }
+  
+  @media (min-width: 768px) {
+    width: 600px; /* Adjust the width for medium screens and up */
+  }
+  
+  @media (min-width: 992px) {
+    width: 800px; /* Adjust the width for large screens and up */
+  }
+  
+  @media (min-width: 1200px) {
+    width: 1000px; /* Adjust the width for extra large screens and up */
+  }
+}
 .custom-modal .modal-content {
-  height: auto;
-  width: 70%;
+  height: 80%;
+  width: 90%;
   /* Adjust the background color and opacity as needed */
+
+  @media (max-width: 576px) {
+    width: 90%; /* Adjust the width for small screens and down */
+  }
+  transform: none; /* Remove the transform property */
 }
 
 .custom-modal .modal-body {
@@ -26,12 +61,10 @@
   overflow-y: auto; /* Enable vertical scrolling if content exceeds the maximum height */
 }
 
-.custom-modal .modal-title {
-  
-}
-span{
+.custom-modal span {
   color: red;
 }
-.modal{
+
+.custom-modal #mymodal2 {
   background-color: rgba(186, 184, 184, 0);
 }

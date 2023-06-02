@@ -47,10 +47,14 @@ function About() {
     }   }, []);
 
   return (
+    <>
     <section id="about">
+    <br />
+    <br />
+    
       <CSSTransition nodeRef={aboutRef} in={true} appear={true} timeout={1000} classNames="fade-up">
         <div className="text-center" ref={aboutRef}>
-          <h2 className="title">About VTBIF</h2>
+          <h2 className="heading">About VTBIF</h2>
         </div>
       </CSSTransition>
       <Container>
@@ -71,12 +75,13 @@ function About() {
           </Col>
           <Col md={4}>
             <CSSTransition nodeRef={imageRef} in={true} appear={true} timeout={1000} classNames="fade-up">
-              <Image src={"Images/about.jpeg"} fluid className="img-fluid" ref={imageRef} width={300} height={100} />
+              <Image src={"Images/logo_new.png"} fluid className="img-fluid" ref={imageRef} width={300} height={100} />
             </CSSTransition>
           </Col>
         </Row>
       </Container>
     </section>
+    </>
   );
 }
 

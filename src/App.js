@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div>
-      <ColorSchemesExample />
+      {/* <ColorSchemesExample /> */}
       <ControlledCarousel />
       <Cards />
       <About />
@@ -33,11 +33,13 @@ function App() {
 
       {showModal && (
         <>
-          <div className="modal-overlay" onClick={handleCloseModal} />
-          <div className="modal-wrapper">
-            <Modal show={showModal} onHide={handleCloseModal} dialogClassName="custom-modal">
+          <div className="custom-modal-overlay" onClick={handleCloseModal} />
+          <div className="custom-modal-wrapper">
+            <Modal show={showModal} onHide={handleCloseModal} dialogClassName="custom-modal-dialog">
               <Modal.Header closeButton>
-                <Modal.Title>Welcome to <span>VTBIF</span></Modal.Title>
+                <Modal.Title>
+                  <h3>Welcome to <img src='Images/logo.jpg' className='custom-modal-logo' /></h3>
+                </Modal.Title>
               </Modal.Header>
               <Modal.Body>
                 <p>If you have a startup idea you'd like to share, please fill out our Google Form below. We're excited to hear about your innovative concepts!</p>
