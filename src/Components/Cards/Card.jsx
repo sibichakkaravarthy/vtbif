@@ -17,7 +17,11 @@ function Card() {
   }, []);
 
   return (
+    <>
     <section id="home">
+      <br/>
+      <br/>
+      <br/>
       <div className="container">
         <h1>
           <span className="word jump">V</span>TBIF
@@ -47,6 +51,7 @@ function Card() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

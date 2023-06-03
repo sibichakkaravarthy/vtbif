@@ -3,7 +3,11 @@ import './Contact.css';
 
 const ContactForm = () => {
   return (
+    <>
     <section id="contact" className="contact">
+      <br/>
+      <br/>
+      <br/>
       <h2 className="heading">Contact Us</h2>
       <div className="row">
         <div className="image">
@@ -22,6 +26,7 @@ const ContactForm = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

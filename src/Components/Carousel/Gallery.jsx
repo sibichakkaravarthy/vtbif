@@ -1,202 +1,183 @@
-import React, { useRef, useEffect, useState } from "react";
-import "./Gallery.css";
-import ScrollReveal from "scrollreveal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-import img from "../assest/Picture1.png";
-import img1 from "../assest/vitap-2.png";
-import img2 from "../assest/vitap-3.png";
-import img3 from "../assest/v-6.jpg";
-import img4 from "../assest/v-5.png";
-import img5 from "../assest/v-7.png";
-import img6 from "../assest/v-8.png";
-import img7 from "../assest/v-9.png";
-import img8 from "../assest/v-10.png";
-import img9 from "../assest/v-11.png";
-import img10 from "../assest/v-12.png";
-import img11 from "../assest/v-13.png";
-import img12 from "../assest/v-14.png";
+import React, { useRef } from 'react';
+import CarouselSlider from 'react-carousel-slider';
+import './Gallery.css';
+import img from '../assest/v-10.png';
+import img1 from '../assest/vitap-2.png';
+import img2 from '../assest/vitap-3.png';
+import img3 from '../assest/v-6.jpg';
+import img4 from '../assest/v-5.png';
+import img5 from '../assest/v-7.png';
+import img6 from '../assest/v-8.png';
+import img7 from '../assest/v-9.png';
+import img8 from '../assest/v-10.png';
+import img9 from '../assest/v-11.png';
+import img10 from '../assest/v-12.png';
+import img11 from '../assest/v-13.png';
+import img12 from '../assest/v-14.png';
+import img13 from '../assest/i1.jpg';
+import img14 from '../assest/i2.jpg';   
+import img15 from '../assest/i3.jpg';
+import img16 from '../assest/i4.jpg';
+import img17 from '../assest/i5.jpg';
 
-function Gallery() {
-  const carouselRef = useRef(null);
+const jsonData = {
+  autoSliding: {
+    items: [
+      {
+        imgSrc: img,
+      },
+      {
+        imgSrc: img1,
+      },
+      {
+        imgSrc: img2,
+      },
+      {
+        imgSrc: img3,
+      },
+      {
+        imgSrc: img4,
+      },
+      {
+        imgSrc: img5,
+      },
+      {
+        imgSrc: img6,
+      },
+      {
+        imgSrc: img7,
+      },
+      {
+        imgSrc: img8,
+      },
+      {
+        imgSrc: img9,
+      },
+      {
+        imgSrc: img10,
+      },
+      {
+        imgSrc: img11,
+      },
+      {
+        imgSrc: img12,
+      },
+      {
+        imgSrc: img13,
+      },
+      {
+        imgSrc: img14,
+      },
+      {
+        imgSrc: img15,
+      },
+      {
+        imgSrc: img16,
+      },
+      {
+        imgSrc: img17,
+      },
+      
+    ],
+  },
+};
+
+const AutoSlideCarousel = () => {
+  const sliderBoxRef = useRef(null);
   const modalRef = useRef(null);
   const modalContentRef = useRef(null);
-  const [firstImgWidth, setFirstImgWidth] = useState(0);
-
-  const openModal = (img) => {
-    modalRef.current.style.display = "block";
-    modalContentRef.current.src = img.src;
-  };
-
-  const closeModal = () => {
-    modalRef.current.style.display = "none";
-  };
-
   
-  const handleArrowClick = (direction) => {
-    const newScrollLeft =
-      direction === "left"
-        ? carouselRef.current.scrollLeft - firstImgWidth
-        : carouselRef.current.scrollLeft + firstImgWidth;
+  const slideItems = jsonData.autoSliding.items.map((item) => ({
+    imgSrc: item.imgSrc,
+  }));
 
-    carouselRef.current.scrollLeft = newScrollLeft;
+  const slideCpnts = slideItems.map((item, i) => (
+    <div
+      className="slide-item"
+      key={i}
+      style={{ width: sliderBoxRef.current?.offsetWidth }}
+    >
+      <img
+        className="slide-img"
+        src={item.imgSrc}
+        alt="slide"
+        onClick={() => openModal(item)}
+      />
+    </div>
+  ));
+  
+  const settings = {
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
   };
+  
+  const buttonSetting = {
+    placeOn: 'middle-inside',
+    
+    style: {
+      left: {
+        height: '50px',
+        width: '50px',
+        color: '#000',
+       fontweight: 'bold',
+        borderRadius: '50%',
+        backgroundcolor: 'black',
+        
 
-  useEffect(() => {
-    ScrollReveal().reveal(".carousel_2 img");
-    if (carouselRef.current.children[0]) {
-      setFirstImgWidth(carouselRef.current.children[0].clientWidth + 14);
-    }
-  }, []);
-
+      },
+      right: {
+        backgroundcolor: 'black',
+        height: '50px',
+        width: '50px',
+        color: '#000',
+        backgroundcolor: 'black',
+        borderRadius: '50%',
+      },
+    },
+  };
+  
+  const openModal = (item) => {
+    const imgElement = document.createElement('img');
+    imgElement.src = item.imgSrc;
+    imgElement.alt = 'modal-image';
+    imgElement.className = 'modal-image'; // Add the desired class name
+  
+    modalContentRef.current.innerHTML = ''; // Clear existing content
+    modalContentRef.current.appendChild(imgElement);
+    modalRef.current.style.display = 'block';
+  };
+  
   return (
-    <section id="gallery">
-      <h2 className="title">Gallery</h2>
-      <div className="container-gallery">
-        <div className="wrapper">
-          <FontAwesomeIcon
-            id="left"
-            icon={faAngleLeft}
-            onClick={() => handleArrowClick("left")}
-          />
-          <div className="carousel_2" ref={carouselRef}>
-          <img
-  id="myImg1"
-  src={img}
-  alt="img1"
-  draggable="false"
-  onClick={() => openModal(document.getElementById("myImg1"))}
-  onLoad={() => {
-    if (carouselRef.current.children[0]) {
-      setFirstImgWidth(carouselRef.current.children[0].clientWidth + 14);
-    }
-  }}
-/>
-
-<img
-  id="myImg2"
-  src={img1}
-  alt="img2"
-  draggable="false"
-  onClick={() => openModal(document.getElementById("myImg2"))}
-/>
-<img
-  id="myImg3"
-  src={img2}
-  alt="img3"
-  draggable="false"
-  onClick={() => openModal(document.getElementById("myImg3"))}
-/>
-            <img
-              id="myImg2"
-              src={img2}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img3}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img4}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img5}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img6}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img7}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img8}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img8}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img9}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img10}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img11}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            <img
-              id="myImg2"
-              src={img12}
-              alt="img2"
-              draggable="false"
-              onClick={() => openModal(document.getElementById("myImg2"))}
-            />
-            {/* Add more images here */}
-
-          </div>
-          <FontAwesomeIcon
-            id="right"
-            icon={faAngleRight}
-            onClick={() => handleArrowClick("right")}
-            style={{
-              backgroundColor: "#6a6a6a",
-              borderRadius: "50%",
-              padding: "10px",
-              color: "#fff",
-              
-            }}
-          />
+    <>
+    <div id="gallery"className="carousel-container">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h2 className="heading">Gallery</h2>
+      <div className="slider-box" ref={sliderBoxRef}>
+        <CarouselSlider
+          slideCpnts={slideCpnts}
+          settings={settings}
+          buttonSetting={buttonSetting}
+        />
+      </div>
+      <div className="modal" ref={modalRef}>
+        <div className="modal-content" ref={modalContentRef}>
         </div>
+          <span className="close-btn" onClick={() => (modalRef.current.style.display = 'none')}>
+            ×
+          </span>
       </div>
-      <div ref={modalRef} className="modal">
-        <span className="close" onClick={closeModal}>
-          ×
-        </span>
-        <img className="modal-content" ref={modalContentRef} alt="modal-img" />
-      </div>
-    </section>
+    </div>
+    </>
   );
-}
+};
 
-export default Gallery;
+export default AutoSlideCarousel;

@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a724f4b6.css",
-    "main.js": "/static/js/main.0f7bbca8.js",
+    "main.css": "/static/css/main.2cc4434b.css",
+    "main.js": "/static/js/main.e361cab6.js",
     "static/media/vitap-2.png": "/static/media/vitap-2.6f609fbca15faf296123.png",
     "static/media/v-5.png": "/static/media/v-5.5523826a47ced10a09a1.png",
-    "static/media/Picture1.png": "/static/media/Picture1.82e5d7cc831580057a97.png",
+    "static/media/i3.jpg": "/static/media/i3.c996bd79a585697dcc28.jpg",
+    "static/media/i5.jpg": "/static/media/i5.c0b579e640c8ecd1697f.jpg",
     "static/media/vitap-3.png": "/static/media/vitap-3.83bf3e1c67c3f89d469f.png",
     "static/media/v-13.png": "/static/media/v-13.50dda9b9c3464c27776d.png",
+    "static/media/i4.jpg": "/static/media/i4.145a91a63511963e89cb.jpg",
     "static/media/v-12.png": "/static/media/v-12.7b96c26a9a7bedae62da.png",
     "static/media/v-11.png": "/static/media/v-11.bd5a9ce38e192528feaf.png",
     "static/media/v-8.png": "/static/media/v-8.39db7a765023c59dc878.png",
@@ -16,13 +18,15 @@
     "static/media/v-14.png": "/static/media/v-14.c93e1458e6cbe0a75f62.png",
     "static/media/v-10.png": "/static/media/v-10.557ebb1e6627751efcec.png",
     "static/media/vitap-1.jpg": "/static/media/vitap-1.439a33078942a72b05ae.jpg",
+    "static/media/i2.jpg": "/static/media/i2.044a7d48e5cbbcd79350.jpg",
     "static/media/v-6.jpg": "/static/media/v-6.789e31ca880eebb6aba9.jpg",
+    "static/media/i1.jpg": "/static/media/i1.5658de0b5b8818308ef3.jpg",
     "index.html": "/index.html",
-    "main.a724f4b6.css.map": "/static/css/main.a724f4b6.css.map",
-    "main.0f7bbca8.js.map": "/static/js/main.0f7bbca8.js.map"
+    "main.2cc4434b.css.map": "/static/css/main.2cc4434b.css.map",
+    "main.e361cab6.js.map": "/static/js/main.e361cab6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a724f4b6.css",
-    "static/js/main.0f7bbca8.js"
+    "static/css/main.2cc4434b.css",
+    "static/js/main.e361cab6.js"
   ]
 }
