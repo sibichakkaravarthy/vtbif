@@ -52,7 +52,7 @@ const Startup = () => {
               <li className="list-group-item">Industry: Technology</li>
             </ul>
             <div className="card-footer">
-              <a href="https://digitalfortress.in/" className="btn btn-primary">Learn More</a>
+              <a href="" className="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ const Startup = () => {
               <li className="list-group-item">Industry: Technology</li>
             </ul>
             <div className="card-footer">
-              <a href="/" className="btn btn-primary">Learn More</a>
+              <a href="" className="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ const Startup = () => {
               <li className="list-group-item">Industry: Technology</li>
             </ul>
             <div className="card-footer">
-              <a href="https://digitalfortress.in/" className="btn btn-primary">Learn More</a>
+              <a href="/" className="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
