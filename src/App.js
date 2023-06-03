@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import ColorSchemesExample from './Components/Navbar/ColorSchemesExample.jsx';
+
 import ControlledCarousel from './Components/Carousel/ControlledCarousel.jsx';
 import Cards from './Components/Cards/Card.jsx';
 import About from './Components/about/About.jsx';
@@ -10,7 +10,9 @@ import Team from './Components/Carousel/Team.jsx';
 import Contact from './Components/about/contact.jsx';
 import Footer from './Components/about/footer.jsx';
 
+
 import './App.css';
+import FireworksComponent from './Components/Carousel/FireworksComponent.jsx';
 
 function App() {
   const [showModal, setShowModal] = useState(true);
@@ -22,6 +24,7 @@ function App() {
   return (
     <div>
       {/* <ColorSchemesExample /> */}
+      
       <ControlledCarousel />
       <Cards />
       <About />
@@ -36,6 +39,12 @@ function App() {
           <div className="custom-modal-overlay" onClick={handleCloseModal} />
           <div className="custom-modal-wrapper">
             <Modal show={showModal} onHide={handleCloseModal} dialogClassName="custom-modal-dialog">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
               <Modal.Header closeButton>
                 <Modal.Title>
                   <h3>Welcome to <img src='Images/logo.jpg' className='custom-modal-logo' /></h3>

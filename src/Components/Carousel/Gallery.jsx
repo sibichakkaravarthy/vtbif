@@ -136,7 +136,7 @@ const AutoSlideCarousel = () => {
         height: '50px',
         width: '50px',
         color: '#000',
-        backgroundcolor: 'black',
+        
         borderRadius: '50%',
       },
     },
