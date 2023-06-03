@@ -15,6 +15,11 @@ import img9 from '../assest/v-11.png';
 import img10 from '../assest/v-12.png';
 import img11 from '../assest/v-13.png';
 import img12 from '../assest/v-14.png';
+import img13 from '../assest/i1.jpg';
+import img14 from '../assest/i2.jpg';   
+import img15 from '../assest/i3.jpg';
+import img16 from '../assest/i4.jpg';
+import img17 from '../assest/i5.jpg';
 
 const jsonData = {
   autoSliding: {
@@ -59,11 +64,21 @@ const jsonData = {
         imgSrc: img12,
       },
       {
-        imgSrc: img,
+        imgSrc: img13,
       },
       {
-        imgSrc: img1,
+        imgSrc: img14,
       },
+      {
+        imgSrc: img15,
+      },
+      {
+        imgSrc: img16,
+      },
+      {
+        imgSrc: img17,
+      },
+      
     ],
   },
 };

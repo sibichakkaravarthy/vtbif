@@ -21,7 +21,33 @@ const Startup = () => {
               </p>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Location: Vtbif VIT-AP, India</li>
+              <li className="list-group-item">Location: VTBIF , VIT-AP, India</li>
+              <li className="list-group-item">Founding Year: 2023</li>
+              <li className="list-group-item">Industry: Technology</li>
+            </ul>
+            <div className="card-footer">
+              <a href="https://digitalfortress.in/" className="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="card left-card">
+        <div className="row g-0">
+          <div className="col-md-4">
+            <img
+              src="Images/lea.png"
+              alt="Startup Logo"
+              className="card-img-top"
+            />
+          </div>
+          <div className="col-md-8">
+            <div className="card-body">
+              <h5 className="card-title">I leaves</h5>
+              <p className="card-text">
+                It “i-Leaves” is an innovative technology company focused on developing solutions to address various challenges in different sectors, with a particular emphasis on Agriculture, Energy and Health care. </p>
+            </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Location: VTBIF , VIT-AP, India</li>
               <li className="list-group-item">Founding Year: 2023</li>
               <li className="list-group-item">Industry: Technology</li>
             </ul>
@@ -48,7 +74,7 @@ const Startup = () => {
               </p>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Location: Vtbif VIT-AP, India</li>
+              <li className="list-group-item">Location: VTBIF , VIT-AP, India</li>
               <li className="list-group-item">Founding Year: 2023</li>
               <li className="list-group-item">Industry: Technology</li>
             </ul>
@@ -75,7 +101,7 @@ const Startup = () => {
               </p>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Location: Vtbif VIT-AP, India</li>
+              <li className="list-group-item">Location: VTBIF , VIT-AP, India</li>
               <li className="list-group-item">Founding Year: 2023</li>
               <li className="list-group-item">Industry: Technology</li>
             </ul>
@@ -85,6 +111,7 @@ const Startup = () => {
           </div>
         </div>
       </div>
+      
 
       <div className="card right-card">
         <div className="row g-0">
@@ -103,7 +130,7 @@ const Startup = () => {
               </p>
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Location: Vtbif VIT-AP, India</li>
+              <li className="list-group-item">Location: VTBIF , VIT-AP, India</li>
               <li className="list-group-item">Founding Year: 2023</li>
               <li className="list-group-item">Industry: Technology</li>
             </ul>
