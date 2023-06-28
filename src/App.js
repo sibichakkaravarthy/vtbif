@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from 'react-bootstrap';
+
 
 import ControlledCarousel from './Components/Carousel/ControlledCarousel.jsx';
 import Cards from './Components/Cards/Card.jsx';
@@ -11,7 +11,7 @@ import Contact from './Components/about/contact.jsx';
 import Footer from './Components/about/footer.jsx';
 
 import './App.css';
-import FireworksComponent from './Components/Carousel/FireworksComponent.jsx';
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

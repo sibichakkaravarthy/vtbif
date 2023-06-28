@@ -44,7 +44,7 @@ const Startup = () => {
             <div className="card-body">
               <h5 className="card-title">I leaves</h5>
               <p className="card-text">
-                It “i-Leaves” is an innovative technology company focused on developing solutions to address various challenges in different sectors, with a particular emphasis on Agriculture, Energy and Health care. </p>
+                 “i-Leaves” is an innovative technology company focused on developing solutions to address various challenges in different sectors, with a particular emphasis on Agriculture, Energy and Health care. </p>
             </div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">Location: VTBIF , VIT-AP, India</li>
