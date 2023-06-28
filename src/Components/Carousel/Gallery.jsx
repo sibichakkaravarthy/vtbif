@@ -5,7 +5,7 @@ import './Gallery.css';
 import img from '../assest/v-10.png';
 import img1 from '../assest/vitap-2.png';
 import img2 from '../assest/vitap-3.png';
-import img3 from '../assest/v-6.jpg';
+import img3 from '../assest/akash.jpg';
 import img4 from '../assest/v-5.png';
 import img5 from '../assest/v-7.png';
 import img6 from '../assest/v-8.png';
