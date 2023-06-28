@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.571f7d90.css",
-    "main.js": "/static/js/main.67862794.js",
+    "main.js": "/static/js/main.32fd7197.js",
     "static/media/vitap-2.png": "/static/media/vitap-2.6f609fbca15faf296123.png",
     "static/media/v-5.png": "/static/media/v-5.5523826a47ced10a09a1.png",
     "static/media/i3.jpg": "/static/media/i3.c996bd79a585697dcc28.jpg",
@@ -18,15 +18,15 @@
     "static/media/v-14.png": "/static/media/v-14.c93e1458e6cbe0a75f62.png",
     "static/media/v-10.png": "/static/media/v-10.557ebb1e6627751efcec.png",
     "static/media/vitap-1.jpg": "/static/media/vitap-1.439a33078942a72b05ae.jpg",
+    "static/media/akash.jpg": "/static/media/akash.33d0fba4c2eeaf4fc0d5.jpg",
     "static/media/i2.jpg": "/static/media/i2.044a7d48e5cbbcd79350.jpg",
-    "static/media/v-6.jpg": "/static/media/v-6.789e31ca880eebb6aba9.jpg",
     "static/media/i1.jpg": "/static/media/i1.5658de0b5b8818308ef3.jpg",
     "index.html": "/index.html",
     "main.571f7d90.css.map": "/static/css/main.571f7d90.css.map",
-    "main.67862794.js.map": "/static/js/main.67862794.js.map"
+    "main.32fd7197.js.map": "/static/js/main.32fd7197.js.map"
   },
   "entrypoints": [
     "static/css/main.571f7d90.css",
-    "static/js/main.67862794.js"
+    "static/js/main.32fd7197.js"
   ]
 }
