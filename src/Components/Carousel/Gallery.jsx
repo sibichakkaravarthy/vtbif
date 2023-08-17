@@ -21,6 +21,7 @@ import img15 from '../assest/i3.jpg';
 import img16 from '../assest/i4.jpg';
 import img17 from '../assest/i5.jpg';
 
+
 const jsonData = {
   autoSliding: {
     items: [

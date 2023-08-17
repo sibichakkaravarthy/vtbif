@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import Header from "./Components/Navbar/ColorSchemesExample.jsx";
+import Cards from "./Components/Cards/Card.jsx";
+import About from "./Components/about/About.jsx";
+import Gallery from "./Components/Carousel/Gallery.jsx";
+import FAQ from "./Components/Cards/Faq.jsx";
+import Team from "./Components/Carousel/Team.jsx";
+import Contact from "./Components/about/contact.jsx";
+import Footer from "./Components/about/footer.jsx";
 
-
-import ControlledCarousel from './Components/Carousel/ControlledCarousel.jsx';
-import Cards from './Components/Cards/Card.jsx';
-import About from './Components/about/About.jsx';
-import Gallery from './Components/Carousel/Gallery.jsx';
-import FAQ from './Components/Cards/Faq.jsx';
-import Team from './Components/Carousel/Team.jsx';
-import Contact from './Components/about/contact.jsx';
-import Footer from './Components/about/footer.jsx';
-
-import './App.css';
-
+import "./App.css";
+import ControlledCarousel from "./Components/Carousel/ControlledCarousel.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +18,7 @@ function App() {
     // Simulating a loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -28,17 +26,24 @@ function App() {
   return (
     <div>
       {isLoading ? (
-        <div className="loader-container">
-          <div className="loader" />
-        </div>
+    <div class="loader-container">
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  
+  
+    
       ) : (
         <>
           {/* <ColorSchemesExample /> */}
-          <ControlledCarousel />
+    
+        <ControlledCarousel />
           <Cards />
           <About />
           <Gallery />
-          <Team />
           <Contact />
           <FAQ />
           <Footer />

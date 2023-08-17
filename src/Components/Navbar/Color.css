@@ -1,13 +1,23 @@
 .navbar-nav a {
   font-size: 18px;
   font-weight: 500;
-  color: black; /* Set the color to black */
+  color: black; /* Set the default color to black */
 }
-.wordjump {
-  color: brown;
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 2px 2px #ddd;
+
+.navbar-nav a:hover {
+  color: red; /* Change the hover color to red (you can use any color you prefer) */
+}
+
+.navbar-logo {
+  max-width: 100px; /* Adjust the width as needed */
+  margin-right: 20px; /* Add some right margin to separate it from other elements */
+}
+
+.log-1 {
+  width: 70%;
+  height: 60%;
+  object-fit: cover;
+  justify-content: start;
 }
 .navbar-light .navbar-brand {
   color: black;

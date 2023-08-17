@@ -1,6 +1,7 @@
 import './card.css';
 import React from 'react';
 import ScrollReveal from 'scrollreveal';
+import im from '../assest/vision.png';
 
 function Card() {
   const config = {
@@ -28,7 +29,7 @@ function Card() {
         </h1>
         <div className="card">
           <div className="card-block">
-            <h4>Vision</h4>
+            <h4><img src={im} alt=""className='h' />Vision</h4>
             <p>
               A nurturing platform that supports new age tech entrepreneurs to
               transform their innovative ideas to successful business ventures
