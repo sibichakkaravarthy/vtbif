@@ -10,7 +10,7 @@ const TeamSection = () => {
           {/* Card 1 */}
           <div className="teamcard">
             <div className="image">
-            <img src="Images/amet.jpg" alt="" />
+            <img src="Images/ameet.jpeg" alt="" />
             </div>
             <div className="info">
               <h3 className="u">Dr. Ameet Chavan</h3>
@@ -27,10 +27,20 @@ const TeamSection = () => {
               <span className="r">VLSI Architectures, FPGA Design, Digital IC Design</span>
             </div>
           </div>
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/ravi.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. M Ravindra
+</h3>
+              <span className="r"></span>
+            </div>
+          </div>
           {/* {card 3} */}
           <div className="teamcard">
             <div className="image">
-              <img src="Images/anu.jpeg" alt="" />
+              <img src="Images/OIP.jpeg" alt="" />
             </div>
             <div className="info">
               <h3 className="u">Dr. Anupama Namburu</h3>
@@ -44,21 +54,100 @@ const TeamSection = () => {
             </div>
             <div className="info">
               <h3 className="u">S. Sibi Chakkaravarthy</h3>
-              <span className="r">Cyber Security</span>
+              
             </div>
           </div>
+
+
           <div className="teamcard">
             <div className="image">
-              <img src="Images/sam.png" alt="" />
+              <img src="Images/sam.jpg" alt="" />
             </div>
             <div className="info">
-              <h3 className="u">S. Sibi Chakkaravarthy</h3>
-              <span className="r">Cyber Security</span>
+              <h3 className="u">Prof. Samuel Johnson</h3>
+             
             </div>
+            </div>
+            <div className="teamcard">
+            <div className="image">
+              <img src="Images/sira.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. Y Md. Sirajudeen</h3>
+              
+            </div>
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/pri.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. S. Priyanka</h3>
+            </div>
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/ani.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. Anindita Shome
+</h3>
+            </div>
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/ana.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Prof. Ananthu S. Hari
+</h3>
+            </div>
+          </div>
+{/* 
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/pri.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. S. Priyanka</h3>
+            </div>
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/pri.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. S. Priyanka</h3>
+            </div>
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/pri.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. S. Priyanka</h3>
+            </div>
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/pri.jpg" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. S. Priyanka</h3>
+            </div>
+          </div> */}
+
+
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 
