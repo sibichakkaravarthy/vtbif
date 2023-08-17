@@ -2,13 +2,13 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import ApplyButton from './ApplyButton';
 import './Color.css'
-
+import Logo from '../assest/logo.jpg';
 function ColorSchemesExample() {
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="fixed-top">
       <Container>
-        <Navbar.Brand href="#">
-         <h2><span className="wordjump">V</span>TBIF</h2>
+      <Navbar.Brand href="#">
+          <img src={Logo} alt="" className='log-1 navbar-logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
@@ -16,6 +16,7 @@ function ColorSchemesExample() {
             <Nav.Link href="/#home">Home</Nav.Link>
             <Nav.Link href="/#about">About</Nav.Link>
             <Nav.Link href="/startup">Startup</Nav.Link>
+            <Nav.Link href="/team">Team</Nav.Link>
             <Nav.Link href="/#gallery">Gallery</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             <ApplyButton/>

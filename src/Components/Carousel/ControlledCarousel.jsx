@@ -4,7 +4,7 @@ import './ControlledCarousel.css';
 import img from '../assest/vitap-1.jpg';
 import img1 from '../assest/vitap-2.jpg';
 import img2 from '../assest/vitap-1.jpg';
-import FireworksComponent from './FireworksComponent';
+
 
 export default function ControlledCarousel({ background }) {
   const [index, setIndex] = useState();
@@ -48,9 +48,7 @@ export default function ControlledCarousel({ background }) {
         </Carousel.Item>
       </Carousel>
 
-      <div className="fireworks-container">
-        <FireworksComponent />
-      </div>
+      
     </div>
   );
 }

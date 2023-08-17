@@ -4,7 +4,7 @@
     align-items: center;
   }
   #about {
-    background-color: #fff;
+   background-color: #F5F5F5;
     padding: 50px 0;
   }
   .heading {
@@ -46,9 +46,18 @@
   .card-text {
     text-align: left;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
+    position: relative;
+    
     font-family: 'Roboto', sans-serif;
   }
+  .card-text::before {
+    content: "";
+    display: block;
+    height: 1rem; /* Adjust the height value to control the space between paragraphs */
+  }
+  
+  
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
   #about .card-text {

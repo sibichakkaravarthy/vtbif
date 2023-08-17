@@ -63,12 +63,20 @@ function About() {
             <CSSTransition nodeRef={cardRef} in={true} appear={true} timeout={1000} classNames="fade-up">
               <Card.Body ref={cardRef}>
                 <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                  <Card.Text className="card-text text-left">
-                  Amaravathi, Andhra Pradesh's VIT-AP University is home to the VIT-AP Technology Business Incubation Foundation (VTBIF), an incubator. It is now going through the registration process to become a section-8 not-for-profit organisation. VTBIF's main goal is to encourage future faculty members and students to be innovative and entrepreneurial.
-                  Many product prototypes are currently being developed and supported at the centre, which provides support for startups that are knowledge- and technology-driven. For incubation and product development operations, the incubation centre offers a dedicated 12,500 square foot facility. At one time, it can accommodate and support more than 50 incubates.
-                  The VTBIF has a makerspace, a free-time entertainment area, executive offices, co-working spaces, boardrooms, and dedicated office space. Furthermore, the incubators can make use of the resources set up in the fields of robotics and AI, the Internet of Things (IOT), cybersecurity, and rapid prototyping.
+                <Card.Text className="card-text text-left">VITAP University had established Innovation Incubation Entrepreneurship Cell (IIEC), to provide mentorship, 
+  training, and resources to help students and faculty turn their innovative ideas into commercial products.VIT-AP Technology Business Incubation Foundation (VTBIF), incubation centre was established in the year 2023. 
+  VTBIF is incorporated as a Section-8 Company under the Ministry of Corporate Affairs (MCA). At VTBIF, we believe 
+  that entrepreneurship is the key to unlocking innovation and driving progress. VTBIF assists faculty and students in 
+  their technology-based and knowledge-driven startups, and currently many product prototypes are supported at the 
+  centre.
+<br/><br></br>Additionally, the registered incubatees can utilize 
+  COE facilities established in the areas of AI and Robotics, Internet of Things (IOT), Cybersecurity, and Rapid 
+  Prototyping. Our team of experts and mentors will guide you through the process of starting a business, from the 
+  initial idea to securing funding and beyond. We also provide mentorship and training programs to help enhance 
+  entrepreneurs' skills and knowledge. Through the V-Launch Scheme, the University supports innovative start-up 
+  projects of faculty and students with grants up to Rs. 2 Lakhs in phases.
+</Card.Text>
 
-                  </Card.Text>
                 </div>
               </Card.Body>
             </CSSTransition>
