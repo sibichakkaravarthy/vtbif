@@ -7,6 +7,7 @@ import Startup from './Components/about/Startup.jsx';
 import Team from './Components/Carousel/Team.jsx';
 import App from './App.js';
 import Header from './Components/Navbar/ColorSchemesExample.jsx';
+import Event from './Components/Events/Event.js'
 
 function Root() {
   return (
@@ -18,6 +19,7 @@ function Root() {
         <Route path="/" element={<App />} />
         <Route path="/startup" element={<Startup />} />
         <Route path="/team" element={<Team/>} />
+        <Route path="/event" element={<Event/>} />
       </Routes>
       
     </BrowserRouter>

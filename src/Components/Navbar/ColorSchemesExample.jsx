@@ -17,6 +17,7 @@ function ColorSchemesExample() {
             <Nav.Link href="/#about">About</Nav.Link>
             <Nav.Link href="/startup">Startup</Nav.Link>
             <Nav.Link href="/team">Team</Nav.Link>
+            <Nav.Link href="/event">Events</Nav.Link>
             <Nav.Link href="/#gallery">Gallery</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             <ApplyButton/>
