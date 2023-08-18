@@ -1,7 +1,7 @@
 import './card.css';
 import React from 'react';
 import ScrollReveal from 'scrollreveal';
-import Logo from '../assest/logo.jpg';
+
 
 function Card() {
   const config = {

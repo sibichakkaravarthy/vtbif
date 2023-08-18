@@ -1,7 +1,7 @@
 import React from 'react';
 import './team.css';
 
-const TeamSection = () => {
+const Team = () => {
   return (
     <div id="team" className="team">
       <h4 className="headings">TEAM</h4>
@@ -106,42 +106,60 @@ const TeamSection = () => {
 </h3>
             </div>
           </div>
-{/* 
+
           <div className="teamcard">
             <div className="image">
-              <img src="Images/pri.jpg" alt="" />
+              <img src="Images/Sab.png" alt="" />
             </div>
             <div className="info">
-              <h3 className="u">Dr. S. Priyanka</h3>
+              <h3 className="u">Dr. Sabeel Basheer</h3>
             </div>
           </div>
 
           <div className="teamcard">
             <div className="image">
-              <img src="Images/pri.jpg" alt="" />
+              <img src="Images/azad.png" alt="" />
             </div>
             <div className="info">
-              <h3 className="u">Dr. S. Priyanka</h3>
+              <h3 className="u">Dr. Abdul Kalam Azad</h3>
             </div>
           </div>
 
           <div className="teamcard">
             <div className="image">
-              <img src="Images/pri.jpg" alt="" />
+              <img src="Images/avin.png" alt="" />
             </div>
             <div className="info">
-              <h3 className="u">Dr. S. Priyanka</h3>
+              <h3 className="u">Prof. Avin Tiwari</h3>
             </div>
           </div>
 
           <div className="teamcard">
             <div className="image">
-              <img src="Images/pri.jpg" alt="" />
+              <img src="Images/deep.png" alt="" />
             </div>
             <div className="info">
-              <h3 className="u">Dr. S. Priyanka</h3>
+              <h3 className="u">Dr. Deepjoy Katuwal</h3>
             </div>
-          </div> */}
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/kupp.png" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. Kuppusamy P</h3>
+            </div>
+          </div>
+
+          <div className="teamcard">
+            <div className="image">
+              <img src="Images/renu.png" alt="" />
+            </div>
+            <div className="info">
+              <h3 className="u">Dr. Renuprasad Patki</h3>
+            </div>
+          </div>
 
 
           </div>
@@ -151,4 +169,4 @@ const TeamSection = () => {
   );
 };
 
-export default TeamSection;
+export default Team;
