@@ -101,7 +101,7 @@ const Team = () => {
             <div className="info">
               <h3 className="u">Dr. Sudha Ellison Mathe</h3>
               <span className="r">
-                VLSI Architectures, FPGA Design, Digital IC Design
+               
               </span>
             </div>
           </div>
@@ -115,15 +115,7 @@ const Team = () => {
             </div>
           </div>
           {/* {card 3} */}
-          <div className="teamcard">
-            <div className="image">
-              <img src="Images/OIP.jpeg" alt="" />
-            </div>
-            <div className="info">
-              <h3 className="u">Dr. Anupama Namburu</h3>
-              <span className="r"></span>
-            </div>
-          </div>
+          
           {/* Card 4 */}
           <div className="teamcard">
             <div className="image">
