@@ -100,9 +100,9 @@ const Team = () => {
             </div>
             <div className="info">
               <h3 className="u">Dr. Sudha Ellison Mathe</h3>
-              <span className="r">
+              <!---<span className="r">
                 VLSI Architectures, FPGA Design, Digital IC Design
-              </span>
+              </span>--->
             </div>
           </div>
           <div className="teamcard">
@@ -114,7 +114,7 @@ const Team = () => {
               <span className="r"></span>
             </div>
           </div>
-          {/* {card 3} */}
+          <!---{/* {card 3} */}
           <div className="teamcard">
             <div className="image">
               <img src="Images/OIP.jpeg" alt="" />
@@ -123,7 +123,7 @@ const Team = () => {
               <h3 className="u">Dr. Anupama Namburu</h3>
               <span className="r"></span>
             </div>
-          </div>
+          </div>--->
           {/* Card 4 */}
           <div className="teamcard">
             <div className="image">
