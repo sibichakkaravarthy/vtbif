@@ -59,7 +59,7 @@ const Team = () => {
     {
       role: "Member",
       name: "  ",
-      position: "Deputy Director IEC",
+      position: "Deputy Director IEC",
     },
     {
       role: "Member",
