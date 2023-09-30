@@ -100,9 +100,14 @@ const Team = () => {
             </div>
             <div className="info">
               <h3 className="u">Dr. Sudha Ellison Mathe</h3>
+<<<<<<< HEAD
               <span className="r">
                
               </span>
+=======
+              <!---<span className="r">
+              </span>--->
+>>>>>>> origin/main
             </div>
           </div>
           <div className="teamcard">
@@ -114,7 +119,10 @@ const Team = () => {
               <span className="r"></span>
             </div>
           </div>
+<<<<<<< HEAD
           {/* {card 3} */}
+=======
+>>>>>>> origin/main
           
           {/* Card 4 */}
           <div className="teamcard">
