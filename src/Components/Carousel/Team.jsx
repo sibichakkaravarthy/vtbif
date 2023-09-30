@@ -100,8 +100,6 @@ const Team = () => {
             </div>
             <div className="info">
               <h3 className="u">Dr. Sudha Ellison Mathe</h3>
-              <!---<span className="r">
-              </span>--->
             </div>
           </div>
           <div className="teamcard">
