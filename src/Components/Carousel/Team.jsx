@@ -90,7 +90,7 @@ const Team = () => {
             </div>
             <div className="info">
               <h3 className="u">Dr. Ameet Chavan</h3>
-              <span className="r">Director of Vtbif</span>
+              
             </div>
           </div>
           {/* Card 2 */}
@@ -114,9 +114,7 @@ const Team = () => {
               <span className="r"></span>
             </div>
           </div>
-          {/* {card 3} */}
-          
-          {/* Card 4 */}
+  
           <div className="teamcard">
             <div className="image">
               <img src="Images/sb.jpeg" alt="" />
